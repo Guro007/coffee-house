@@ -792,7 +792,7 @@ button:hover .water{
     position: absolute;
     right: 23px;
     top: 23px;
-    z-index: 10000;
+     
     width: 10px;
     height: 10px; 
     border-top: 4px solid  #fff;
@@ -2319,7 +2319,6 @@ button:hover .water{
     position: absolute;
     right: 23px;
     top: 23px;
-    z-index: 10000;
     width: 10px;
     height: 10px; 
     border-top: 4px solid  #fff;
@@ -3452,7 +3451,6 @@ content: "";
 position: absolute;
 right: 23px;
 top: 23px;
-z-index: 10000;
 width: 10px;
 height: 10px; 
 border-top: 4px solid  #fff;
