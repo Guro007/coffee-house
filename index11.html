@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index11.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/release/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:ital@1&family=Josefin+Sans:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:ital@1&family=Josefin+Sans:wght@100&display=swap');
+    </style>
+    <title>Document</title>
+</head>
+
+<body style="background: #0e1317;">
+    <!--back to top-->
+    <style>
+        #back-to-top {
+            position: fixed;
+            z-index: 10000;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            width: 2.625rem;
+            height: 2.625rem;
+            border-radius: 1.875rem;
+            border: none;
+            background: #243441 no-repeat center 47%;
+            background-size: 1.125rem 1.125rem;
+            text-indent: -9999px;
+        }
+
+        #back-to-top::before {
+            content: "";
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            z-index: 10000;
+            width: 10px;
+            height: 10px;
+            border-top: 4px solid #fff;
+            border-right: 4px solid #fff;
+            transform: rotate(-44deg);
+            transition: 0.5s;
+            pointer-events: none;
+        }
+    </style>
+    <button id="back-to-top"></button>
+    <!--end 0f back to top-->
+    <!--navigation-->
+    <div class="nav" style="display: flex; flex-wrap: nowrap;">
+        <input id="check" type="checkbox">
+        <div class="nav2">
+            <div class="logo">
+                <a class="opacity" href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <label for="check" class="toggle" onclick="toggleZ()">
+                <span class="top common"></span>
+                <span class="bottom common"></span>
+            </label>
+        </div>
+        <ul class="navigation hide" id="sidebar">
+            <li class="list">
+            <li>
+                <div class="drop">
+                    <div class="dropdown">
+                        <label for="btn1" class="nav-link" id="nav-link"> HOME </label>
+                    </div>
+                </div>
+            </li>
+            <input type="checkbox" id="btn1">
+            <ul class="drop" id="drop">
+                <li>
+                    <a class="nav-link" href="index.html">COFFEE HOUSE</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index2.html">RESTAURANT</a>
+                </li>
+            </ul>
+            <li id="about"><a class="hover" href="index3.html">ABOUT</a></li>
+            <li>
+                <div class="drop">
+                    <div class="dropdown2">
+                        <label for="btn2" class="nav-link" id="nav-link2"> MENU </label>
+                    </div>
+                </div>
+            </li>
+            <input type="checkbox" id="btn2">
+            <ul class="drop" id="drop2">
+                <li>
+                    <a class="nav-link" href="index4.html">MENU COFFEE</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index5.html">MENU RESTAURANT</a>
+                </li>
+            </ul>
+            <li>
+                <div class="drop">
+                    <div class="dropdown3">
+                        <label for="btn3" class="nav-link" id="nav-link3"> PAGES </label>
+                    </div>
+                </div>
+            </li>
+            <input type="checkbox" id="btn3">
+            <ul class="drop" id="drop3">
+                <li>
+                    <a class="nav-link" href="index6.html">SERVICES</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index7.html">RESERVATION</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index8.html">HISTORY</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index9.html">OUR CHEPS</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index10.html">GALLERY</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index11.html">FAQ</a>
+                </li>
+            </ul>
+            <li>
+                <div class="drop">
+                    <div class="dropdown4">
+                        <label for="btn4" class="nav-link" id="nav-link4"> BLOG </label>
+                    </div>
+                </div>
+            </li>
+            <input type="checkbox" id="btn4">
+            <ul class="drop" id="drop4">
+                <li>
+                    <a class="nav-link" href="index12.html">BLOG GRID</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index13.html">BLOG STANDARD</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index14.html">BLOG SINGLE</a>
+                </li>
+            </ul>
+            <li id="contact"><a class="hover" href="index15.html">Contact</a></li>
+            </li>
+            <li>
+                <button class="book">
+                    <a href="index7.html">BOOKING A TABLE</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <div class="water"></div>
+                </button>
+            </li>
+            <div class="top-line">
+                <li>
+                    <div class="social">
+                        <a href="facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+                        <a href="instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                        <a href="youtube.com" target="blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </li>
+                <li class="group">
+                    <div class="flex">
+                        <i class="far fa-clock"></i>
+                        <em>opening hours :</em> 08:00 am - 09:00 pm
+                    </div>
+                </li>
+                <li class="group2">
+                    <div class="flex">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <em>Location :</em> 55 main street, new york
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <!--end of nav-->
+    <!--section1-->
+    <div class="section1">
+        <div class="head-text">
+            <h1>Faq</h1>
+        </div>
+    </div>
+    <!--end of section1-->
+    <!--section2-->
+    <div class="content2">
+        <div class="head-text2">
+            <h4 id="scroll-animation">HAVE ANY QUESTIONS?</h4>
+            <h1 id="scroll-animation2">Frequently Asked Questions</h1>
+        </div>
+        <ul class="sidebar2" id="scroll-animation3"> 
+            <div class="flex2">
+                <div class="margin">
+                    <div class="collapsible">How Much Customer Do You Like Kaffen?</div>
+                    <ul class="content">
+                        <li>
+                            <div class="info">
+                                <div class="img">
+                                    <img src="images/faq_img1.jpg" alt="">
+                                </div>
+                                <p> Sed ut perspiciatixplicabo. Nemo enim ipsam voluptatem quia voluptas Perspiciatis unde omnis iste natus error sit voluptatem accusantium que laudantium, totam rem aperiam, eaque ipsa quae abillo inventore veritatis</p>
+                            </div>
+                        </li>         
+                    </ul>
+                </div>
+            </div> 
+        </ul>
+        <ul class="sidebar2" id="scroll-animation4"> 
+            <div class="flex2">
+                <div class="margin">
+                    <div class="collapsible">How Much Customer Do You Like Kaffen?</div>
+                    <ul class="content">
+                        <li>
+                            <div class="info">
+                                <div class="img">
+                                    <img src="images/reservation5.jpg" alt="">
+                                </div>
+                                <p> Sed ut perspiciatixplicabo. Nemo enim ipsam voluptatem quia voluptas Perspiciatis unde omnis iste natus error sit voluptatem accusantium que laudantium, totam rem aperiam, eaque ipsa quae abillo inventore veritatis</p>
+                            </div>
+                        </li>         
+                    </ul>
+                </div>
+            </div> 
+        </ul>
+        <ul class="sidebar2" id="scroll-animation5"> 
+            <div class="flex2">
+                <div class="margin">
+                    <div class="collapsible">How Much Customer Do You Like Kaffen?</div>
+                    <ul class="content">
+                        <li>
+                            <div class="info">
+                                <div class="img">
+                                    <img src="images/reservation6.jpg" alt="">
+                                </div>
+                                <p> Sed ut perspiciatixplicabo. Nemo enim ipsam voluptatem quia voluptas Perspiciatis unde omnis iste natus error sit voluptatem accusantium que laudantium, totam rem aperiam, eaque ipsa quae abillo inventore veritatis</p>
+                            </div>
+                        </li>         
+                    </ul>
+                </div>
+            </div> 
+        </ul>
+        <ul class="sidebar2" id="scroll-animation6"> 
+            <div class="flex2">
+                <div class="margin">
+                    <div class="collapsible">How Much Customer Do You Like Kaffen?</div>
+                    <ul class="content">
+                        <li>
+                            <div class="info">
+                                <div class="img">
+                                    <img src="images/history1.jpg" alt="">
+                                </div>
+                                <p> Sed ut perspiciatixplicabo. Nemo enim ipsam voluptatem quia voluptas Perspiciatis unde omnis iste natus error sit voluptatem accusantium que laudantium, totam rem aperiam, eaque ipsa quae abillo inventore veritatis</p>
+                            </div>
+                        </li>         
+                    </ul>
+                </div>
+            </div> 
+        </ul>
+        <ul class="sidebar2" id="scroll-animation7"> 
+            <div class="flex2">
+                <div class="margin">
+                    <div class="collapsible">How Much Customer Do You Like Kaffen?</div>
+                    <ul class="content">
+                        <li>
+                            <div class="info">
+                                <div class="img">
+                                    <img src="images/rrr.jpg" alt="">
+                                </div>
+                                <p> Sed ut perspiciatixplicabo. Nemo enim ipsam voluptatem quia voluptas Perspiciatis unde omnis iste natus error sit voluptatem accusantium que laudantium, totam rem aperiam, eaque ipsa quae abillo inventore veritatis</p>
+                            </div>
+                        </li>         
+                    </ul>
+                </div>
+            </div> 
+        </ul>
+    </div>
+    <!--end of section2-->
+     <!--section3-->
+     <div class="section3">
+        <div class="head-text5">
+            <h4 id="scroll-animation8">GET IN TOUCH</h4>
+            <h1 id="scroll-animation9" style="margin-bottom: 30px;">Have Any Questions</h1>
+        </div>
+        <button class="book2 visible" id="scroll-animation10" style="margin-top: 5px;">
+            <a href="index7.html" style="font-size: 11px;text-decoration: none;">BOOKING TABLE</a>
+            <i class="fas fa-chevron-right"></i>
+            <div class="water"></div>
+        </button>
+    </div>
+    <!--end of section3-->
+    <!--section4-->
+    <div class="section4">
+        <div class="brands" id="scroll-animation24">
+            <div class="image">
+                <img src="images/brand1.png" alt="">
+            </div>
+            <div class="image">
+                <img src="images/brand2.png" alt="">
+            </div>
+            <div class="image">
+                <img src="images/brand3.png" alt="">
+            </div>
+            <div class="image">
+                <img src="images/brand4.png" alt="">
+            </div>
+            <div class="image">
+                <img src="images/brand5.png" alt="">
+            </div>
+            <div class="image">
+                <img src="images/brand6.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--end of section4-->
+     <!--footer-->
+     <div class="footer">
+        <div class="row">
+            <div class="footer-flex">
+                <div class="logo2" style="width: 139px; height: 32px;" id="scroll-animation11">
+                    <img src="images/logo (1).png" alt="" style="width:100%;">
+                </div>
+                <div class="list3">
+                    <div class="kf-f-hours">
+                        <h5 id="scroll-animation12">Working Hours</h5>
+                        <ul style="padding-left: 15px;">
+                            <li style="color: white; margin-bottom: 10px;" id="scroll-animation13">
+                                Sunday - Thursday <br>
+                                <em>08:00 am - 09:00pm</em>
+                            </li>
+                            <li style="color: white; margin-bottom: 10px;" id="scroll-animation14">
+                                Only Friday <br>
+                                <em>03:00 pm - 09:00pm</em>
+                            </li>
+                            <li style="color: white;" id="scroll-animation15">
+                                <strong style="font-family: Merienda; color: #ff8a00;">Saturday Close</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-flex">
+                <div class="list4" style="margin: 50px 0px;">
+                    <div class="kf-f-hours">
+                        <h5 id="scroll-animation16">Contact Us</h5>
+                        <ul style="padding-left: 0; list-style: none;">
+                            <li style="color: white; margin-bottom: 10px;" id="scroll-animation17">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div class="location">
+                                    <em>Location :</em> <br>
+                                    55 Main Street, New York
+                                </div>
+                            </li>
+                            <li style="color: white; margin-bottom: 10px;" id="scroll-animation18">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                                <div class="email">
+                                    <em>Email Address :</em> <br>
+                                    kaffendev@gmail.com
+                                </div>
+                            </li>
+                            <li style="color: white; margin-bottom: 10px;" id="scroll-animation19">
+                                <i class="fa-sharp fa-solid fa-phone"></i>
+                                <div class="phone">
+                                    <em>Phone Number :</em> <br>
+                                    +012 (345) 678 99
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list5">
+                    <h5 id="scroll-animation20" style="color: white; font-size: 24px; margin-bottom: 20px;">Gallery</h5>
+                    <div class="column3" style="width: 100%;">
+                        <ul style="list-style: none; padding: 0; width: 100%;" id="scroll-animation21">
+                            <li style="overflow: hidden;">
+                                <button class="btn3 btn-primary"
+                                    style="background-color: transparent; border: none; border-radius: 0; padding: 0;"
+                                    data-bs-target="#exampleModalToggle12" data-bs-toggle="modal">
+                                    <div class="hover2">
+                                        <div class="img-hover">
+                                            <img src="images/4.jpg" alt="" style=" transition: 0.5s;">
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li style="overflow: hidden;">
+                                <button class="btn3 btn-primary"
+                                    style="background-color: transparent; border: none; border-radius: 0; padding: 0;"
+                                    data-bs-target="#exampleModalToggle13" data-bs-toggle="modal">
+                                    <div class="hover2">
+                                        <div class="img-hover">
+                                            <img src="images/grid_gal2.jpg" alt="" style=" transition: 0.5s;">
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li style="overflow: hidden;">
+                                <button class="btn3 btn-primary"
+                                    style="background-color: transparent; border: none; border-radius: 0; padding: 0;"
+                                    data-bs-target="#exampleModalToggle14" data-bs-toggle="modal">
+                                    <div class="hover2">
+                                        <div class="img-hover">
+                                            <img src="images/2.jpg" alt="" style=" transition: 0.5s;">
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li style="overflow: hidden;">
+                                <button class="btn3 btn-primary"
+                                    style="background-color: transparent; border: none; border-radius: 0; padding: 0;"
+                                    data-bs-target="#exampleModalToggle19" data-bs-toggle="modal">
+                                    <div class="hover2">
+                                        <div class="img-hover">
+                                            <img src="images/menu1.jpg" alt="" style=" transition: 0.5s;">
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                        <ul style="list-style: none; padding: 0;" id="scroll-animation22">
+                            <li style="overflow: hidden;">
+                                <button class="btn3 btn-primary"
+                                    style="background-color: transparent; border: none; border-radius: 0; padding: 0;"
+                                    data-bs-target="#exampleModalToggle15" data-bs-toggle="modal">
+                                    <div class="hover2">
+                                        <div class="img-hover">
+                                            <img src="images/jjj.jpg" alt="" style=" transition: 0.5s;">
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li style="overflow: hidden;">
+                                <button class="btn3 btn-primary"
+                                    style="background-color: transparent; border: none; border-radius: 0; padding: 0;"
+                                    data-bs-target="#exampleModalToggle16" data-bs-toggle="modal">
+                                    <div class="hover2">
+                                        <div class="img-hover">
+                                            <img src="images/3.jpg" alt="" style=" transition: 0.5s;">
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li style="overflow: hidden;">
+                                <button class="btn3 btn-primary"
+                                    style="background-color: transparent; border: none; border-radius: 0; padding: 0;"
+                                    data-bs-target="#exampleModalToggle17" data-bs-toggle="modal">
+                                    <div class="hover2">
+                                        <div class="img-hover">
+                                            <img src="images/flat-white-d8ada0f.jpg" alt="" style=" transition: 0.5s;">
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li style="overflow: hidden;">
+                                <button class="btn3 btn-primary"
+                                    style="background-color: transparent; border: none; border-radius: 0; padding: 0;"
+                                    data-bs-target="#exampleModalToggle18" data-bs-toggle="modal">
+                                    <div class="hover2">
+                                        <div class="img-hover">
+                                            <img src="images/ftr.jpg" alt="" style=" transition: 0.5s;">
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle12" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body p-0">
+                                    <img src="images/4.jpg" alt="">
+                                    <button type="button" class="btn-close"
+                                        style="background-color: rgb(255, 255, 255); width: 15px;"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle13" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <img src="images/grid_gal2.jpg" alt="">
+                                <button type="button" class="btn-close"
+                                    style="background-color: rgb(255, 255, 255); width: 15px;" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle14" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <img src="images/2.jpg" alt="">
+                                <button type="button" class="btn-close"
+                                    style="background-color: rgb(255, 255, 255); width: 15px;" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle15" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <img src="images/save4.jpg" alt="">
+                                <button type="button" class="btn-close"
+                                    style="background-color: rgb(255, 255, 255); width: 15px;" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle16" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <img src="images/save5.jpg" alt="">
+                                <button type="button" class="btn-close"
+                                    style="background-color: rgb(255, 255, 255); width: 15px;" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle17" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <img src="images/flat-white-d8ada0f.jpg" alt="">
+                                <button type="button" class="btn-close"
+                                    style="background-color: rgb(255, 255, 255); width: 15px;" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle18" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <img src="images/ftr.jpg" alt="">
+                                <button type="button" class="btn-close"
+                                    style="background-color: rgb(255, 255, 255); width: 15px;" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle19" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <img src="images/menu1.jpg" alt="">
+                                <button type="button" class="btn-close"
+                                    style="background-color: rgb(255, 255, 255); width: 15px;" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright" style="margin-top: 50px; font-size: 14px; text-align: center; color: #ffffff99;">
+            <!-- copyright -->
+            <div class="kf-copyright" style="border-top: 1px solid rgba(255,255,255,.1); padding: 30px 0px;"
+                id="scroll-animation23">
+                Copyright © 2022 Kaffen. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+    <!--end of footer-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+
+
+    
+    <script>
+        const backToTopButton = document.querySelector("#back-to-top");
+
+        backToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+    </script>
+    <script>
+        window.addEventListener("scroll", function () {
+            if (window.pageYOffset > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+    </script>
+
+    
+    <script>
+        const coll = document.getElementsByClassName("collapsible");
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    
+        </script>
+    
+    <script>
+        let dropdown = document.querySelector('.dropdown');
+        dropdown.onclick = function () {
+            dropdown.classList.toggle('active');
+        }
+    </script>
+    <script>
+        let dropdown2 = document.querySelector('.dropdown2');
+        dropdown2.onclick = function () {
+            dropdown2.classList.toggle('active');
+        }
+    </script>
+    <script>
+        let dropdown3 = document.querySelector('.dropdown3');
+        dropdown3.onclick = function () {
+            dropdown3.classList.toggle('active');
+        }
+    </script>
+    <script>
+        let dropdown4 = document.querySelector('.dropdown4');
+        dropdown4.onclick = function () {
+            dropdown4.classList.toggle('active');
+        }
+    </script>
+
+    <script>
+        function toggleZ() {
+            var element = document.getElementById("sidebar");
+            element.classList.toggle("hide");
+        }
+    </script>
+
+
+    <script>
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                navLinks.forEach(link => link.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+
+    </script>
+
+
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+  });
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation2');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+  });
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation3');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+  });
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation4');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation5');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation6');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation7');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation8');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation9');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation10');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation11');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation12');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation13');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation14');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation15');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation16');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation17');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation18');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation19');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation20');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation21');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation22');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation23');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+  var element = document.querySelector('#scroll-animation24');
+  var position = element.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+
+  if (position < windowHeight) {
+    element.classList.add('visible');
+  }
+});
+</script>
+</body>
+</html>
