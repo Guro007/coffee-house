@@ -587,6 +587,7 @@ button:hover .water{
 
 
 .section2{
+    overflow-x: hidden;
     background: #0e1317;
     padding:70px 15px;
     background: url(images/category_bg.jpg);
@@ -674,6 +675,7 @@ button:hover .water{
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
+    overflow-x: hidden;
 }
 .content{
     max-width: 140px;

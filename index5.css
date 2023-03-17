@@ -678,6 +678,7 @@ button:hover .water{
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
+    overflow-x: hidden;
 }
 
 .content h2{
