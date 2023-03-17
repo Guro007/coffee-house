@@ -573,8 +573,8 @@
 
 
 .head-text h1{ 
-        position: relative;
-        top: -150px;
+        position: absolute;
+        top: 170px;
         left: 30px;
         color: white;
         font-family: Oswald;
@@ -1904,8 +1904,8 @@ background-size: cover;
 
 
 .head-text h1{ 
-    position: relative;
-    top: -250px;
+    position: absolute;
+    top: 270px;
     left: 50px;
     color: white;
     font-family: Oswald;
@@ -3237,8 +3237,8 @@ button:hover .water{
 
 
  .head-text h1{ 
-     position: relative;
-     top: -290px;
+     position: absolute;
+     top: 270px;
      left: 50px;
      color: white;
      font-family: Oswald;
